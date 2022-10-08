@@ -2,6 +2,7 @@ import welcome from "./welcome.js";
 import jokes from "./jokes.js";
 import cep from "./cep/index.js";
 import searchCep from "./cep/search-cep.js";
+import currency from "./currency.js";
 
 export const stages = {
   0: { label: "Boas Vindas", execute: welcome },
@@ -18,6 +19,7 @@ export const stages = {
   3: {
     file: "arquivo3.js",
     label: "Conversão de moeda",
+    execute: currency,
     // https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/eur/brl.json
     // https://github.com/fawazahmed0/currency-api#readme
   },
